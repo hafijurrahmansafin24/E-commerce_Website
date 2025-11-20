@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce website f0r making safin express">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Ecommerce Website</title>
+</head>
+<body>
+    <!-- navbar starts here -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+    <ul class="nav-upper flex-space-around">
+        <li class="nav_list">
+            <a href="index.html" class="nav_link">Home</a>
+        </li>
+
+        <li class="nav_list">
+            <a href="register.html" class="nav_link">Register</a>
+        </li>
+
+        <li class="nav_list">
+            <a href="login.html" class="nav_link">Login</a>
+        </li>
+
+        <li class="nav_list">
+            <a href="/index.html" class="nav_link">Logout</a>
+        </li>
+
+        <li class="nav_list">
+            <a href="contact.html" class="nav_link">Contact</a>
+        </li>
+
+        <li class="nav_list">
+            <a href="profile.html" class="nav_link">
+                <img class="profile-icon" src="images/safin1.png" alt="profile icon"/>
+            </a>
+        </li>
+    </ul>
+
+    <ul class="nav-lower flex-space-around">
+        <li class="nav_list">
+            <a href="/index.html" class="nav_brand nav_link">Safin Express</a>
+        </li>
+
+        <li class="nav_list">
+            <a href="/cart.html" class="nav_link">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                Cart 2 products - $123.70
+            </a>
+        </li>
+    </ul>
+    </nav>
+    <!-- navbar ends here -->
+
+    <main class="flex-center">
+        <div class="main-content">
+            <section class="product-details flex-center">
+                <div class="product__details-left flex-center">
+                    <img src="images/product1.jpg" alt="product1" />
+                </div>
+
+                <div class="product__details-right">
+                    <h3 class="product__name">Sony V-4 Headphone</h3>
+                    <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+
+                    <p class="product__description">
+                    <strong>Description: </strong>
+                        The Sony V-4 Headphone is designed for users who want premium sound quality with modern comfort. Built with high-definition audio drivers, it delivers deep bass, crisp vocals, and balanced tones across all music genres. Its lightweight, cushioned earcups ensure long-lasting comfort, making it perfect for gaming, music, study, and everyday use. With durable construction and a sleek modern finish, the V-4 is both stylish and reliable for daily wear.
+                    </p>
+
+                    <h4 class="product__category">Category: Headphone</h4>
+                    <h4 class="product__price">Price: $225.99</h4>
+                    <p class="product__rating">Rating: 4.5/5</p>
+
+                    <button class="btn product__button">Add To Cart</button>
+                    <button class="btn product__button">Back To Shopping</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- footer starts here -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+            <label for="">Subscribe to Newsletter: </label>
+            <input type="email" id="subscribe" name="subscribe" class="footer_input" placeholder="Your Email Address">
+            <button class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; <span id="year"></span> Copyright Safin Express. All rights reserved</p>
+        </div>
+    </footer>
+    <!-- footer ends here -->
+
+    <script src="style.js"></script>
+</body>
+</html>
